@@ -103,6 +103,7 @@ header h1{
     gap:40px;
     box-shadow:0 0 40px rgba(0,0,0,0.45);
     border:1px solid rgba(255,140,0,0.1);
+    margin-bottom:40px;
 }
 
 .icon{
@@ -159,6 +160,17 @@ header h1{
 .download-button:hover{
     background:#ff9f26;
     transform:translateY(-3px);
+}
+
+.disabled-button{
+    display:inline-block;
+    background:#444;
+    color:#b0b0b0;
+    text-decoration:none;
+    padding:16px 40px;
+    border-radius:18px;
+    font-weight:bold;
+    cursor:default;
 }
 
 footer{
@@ -237,6 +249,8 @@ footer{
 
 <section class="apps">
 
+    <!-- CALCULADORA MÁGICA -->
+
     <div class="card">
 
         <div class="icon">
@@ -263,6 +277,37 @@ footer{
                target="_blank">
                 ⬇ Descargar
             </a>
+
+        </div>
+
+    </div>
+
+    <!-- SCREENCARD -->
+
+    <div class="card">
+
+        <div class="icon">
+            <img src="screencard.png" alt="ScreenCard">
+        </div>
+
+        <div class="info">
+
+            <h2>ScreenCard</h2>
+
+            <p>
+                Una innovadora aplicación de magia que permite crear la ilusión
+                de extraer objetos directamente desde la pantalla del celular.
+                Diseñada para magos modernos que buscan efectos visuales
+                imposibles, impactantes y totalmente memorables.
+            </p>
+
+            <div class="price">
+                Próximamente
+            </div>
+
+            <span class="disabled-button">
+                Próximamente
+            </span>
 
         </div>
 
