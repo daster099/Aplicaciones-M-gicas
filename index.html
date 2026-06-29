@@ -21,12 +21,32 @@ body{
 /* HEADER */
 
 header{
+    position:relative;
+    overflow:hidden;
     text-align:center;
-    padding:80px 20px;
-    background:linear-gradient(180deg,#171717,#0f0f0f);
+    padding:100px 20px;
+    background:
+        radial-gradient(circle at top,
+        rgba(106,92,255,0.15),
+        transparent 45%),
+        linear-gradient(180deg,#171717,#0f0f0f);
+}
+
+.header-glow{
+    position:absolute;
+    width:350px;
+    height:350px;
+    background:rgba(106,92,255,0.12);
+    border-radius:50%;
+    filter:blur(90px);
+    top:-120px;
+    left:50%;
+    transform:translateX(-50%);
+    pointer-events:none;
 }
 
 .logo{
+    position:relative;
     margin-bottom:25px;
 }
 
@@ -38,13 +58,27 @@ header{
 }
 
 header h1{
-    font-size:48px;
-    margin-bottom:10px;
+    position:relative;
+    font-size:54px;
+    letter-spacing:2px;
+    margin-bottom:0;
+}
+
+.divider{
+    width:90px;
+    height:4px;
+    background:#6a5cff;
+    margin:22px auto;
+    border-radius:10px;
 }
 
 header p{
+    position:relative;
     color:#b0b0b0;
     font-size:20px;
+    max-width:600px;
+    margin:auto;
+    line-height:1.7;
 }
 
 /* APPS */
@@ -142,6 +176,10 @@ footer{
         height:120px;
     }
 
+    header{
+        padding:80px 20px;
+    }
+
     header h1{
         font-size:38px;
     }
@@ -161,12 +199,19 @@ footer{
 
 <header>
 
+    <div class="header-glow"></div>
+
     <div class="logo">
         <img src="logo.png" alt="Daster FX">
     </div>
 
     <h1>Daster FX</h1>
-    <p>Aplicaciones para magos y mentalistas.</p>
+
+    <div class="divider"></div>
+
+    <p>
+        Aplicaciones exclusivas para magos y mentalistas.
+    </p>
 
 </header>
 
