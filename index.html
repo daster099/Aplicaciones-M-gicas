@@ -1,30 +1,213 @@
-<div class="card">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daster FX - Aplicaciones Mágicas</title>
 
-    <div class="icon">
-        <img src="calculadora.png" alt="Calculadora Mágica">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, sans-serif;
+}
+
+body{
+    background:#0f0f0f;
+    color:white;
+}
+
+/* HEADER */
+
+header{
+    text-align:center;
+    padding:80px 20px;
+    background:linear-gradient(180deg,#171717,#0f0f0f);
+}
+
+.logo{
+    margin-bottom:25px;
+}
+
+.logo img{
+    width:170px;
+    height:auto;
+    object-fit:contain;
+    filter:drop-shadow(0 0 20px rgba(255,255,255,0.08));
+}
+
+header h1{
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+header p{
+    color:#b0b0b0;
+    font-size:20px;
+}
+
+/* APPS */
+
+.apps{
+    max-width:1100px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+.card{
+    background:#1b1b1b;
+    border-radius:30px;
+    padding:40px;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:35px;
+    box-shadow:0 0 40px rgba(0,0,0,0.5);
+}
+
+.icon{
+    width:150px;
+    height:150px;
+    border-radius:35px;
+    background:#252525;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+}
+
+.icon img{
+    width:90%;
+    height:90%;
+    object-fit:contain;
+}
+
+.info{
+    flex:1;
+}
+
+.info h2{
+    font-size:36px;
+    margin-bottom:15px;
+}
+
+.info p{
+    color:#c0c0c0;
+    line-height:1.8;
+    margin-bottom:25px;
+    font-size:17px;
+}
+
+.price{
+    font-size:30px;
+    color:#55ff88;
+    margin-bottom:25px;
+    font-weight:bold;
+}
+
+.download-button{
+    display:inline-block;
+    background:#22c55e;
+    color:white;
+    text-decoration:none;
+    padding:16px 40px;
+    border-radius:18px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.download-button:hover{
+    background:#16a34a;
+    transform:translateY(-3px);
+}
+
+footer{
+    text-align:center;
+    padding:60px 20px;
+    color:#707070;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:800px){
+
+    .card{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .icon{
+        width:120px;
+        height:120px;
+    }
+
+    header h1{
+        font-size:38px;
+    }
+
+    .info h2{
+        font-size:30px;
+    }
+
+    .logo img{
+        width:130px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <img src="logo.png" alt="Daster FX">
     </div>
 
-    <div class="info">
+    <h1>Daster FX</h1>
+    <p>Aplicaciones para magos y mentalistas.</p>
 
-        <h2>Calculadora Mágica</h2>
+</header>
 
-        <p>
-            Una poderosa herramienta para magos y mentalistas que transforma
-            una simple calculadora en un increíble efecto de magia.
-            Diseñada para actuaciones profesionales, magia de cerca y
-            presentaciones de mentalismo.
-        </p>
+<section class="apps">
 
-        <div class="price">
-            Disponible ahora
+    <div class="card">
+
+        <div class="icon">
+            <img src="calculadora.png" alt="Calculadora Mágica">
         </div>
 
-        <a class="download-button"
-           href="https://exequiel53.gumroad.com/l/asjnjx"
-           target="_blank">
-            ⬇ Descargar
-        </a>
+        <div class="info">
+
+            <h2>Calculadora Mágica</h2>
+
+            <p>
+                Una poderosa herramienta para magos y mentalistas que transforma
+                una simple calculadora en un increíble efecto de magia.
+                Diseñada para actuaciones profesionales, magia de cerca y
+                presentaciones de mentalismo.
+            </p>
+
+            <div class="price">
+                Disponible ahora
+            </div>
+
+            <a class="download-button"
+               href="https://exequiel53.gumroad.com/l/asjnjx"
+               target="_blank">
+                ⬇ Descargar
+            </a>
+
+        </div>
 
     </div>
 
-</div>
+</section>
+
+<footer>
+    © 2026 Daster FX · Todos los derechos reservados.
+</footer>
+
+</body>
+</html>
